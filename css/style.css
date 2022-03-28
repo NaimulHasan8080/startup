@@ -1,0 +1,39 @@
+body{
+    background:#111722;
+    color: white;
+}
+h1{
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 700;
+}
+h5{
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 600;
+}
+
+button{
+    font-family: 'Lexend';
+    font-weight: 500;
+}
+.feature{
+    height: 90px;
+    width: 90px;
+    margin-left: 120px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 70px;
+}
+
+.features-image{
+    height: 44px;
+    width: 44px;
+}
+.feature:hover{
+    background-color: #4A6CF7;
+}
+
+.explore col {
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
+}
