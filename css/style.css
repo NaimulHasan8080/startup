@@ -2,7 +2,7 @@
 
 :root{
     --secondary: gray;
-    --check: #00CB99;
+    --check-right: #00CB99;
 }
 
 
@@ -96,8 +96,8 @@ list-style: none;
 font-size: 18px;
 color: var(--secondary);
 }
-.check{
-    color:var(--check);
+.check-right{
+    color:var(--check-right);
 }
 .month{
     font-size: 55px;

@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Lexend', sans-serif;
+    color: #ffffff;
+}
+
+.dropdown_list-a {
+    display: inline-block;
+    margin-top: 20px;
+    transition: all 0.8;
+}
+
+.dropdown-btn {
+    border: none;
+    background: transparent;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.dropdown-btn:hover {
+    transition: all 0.8;
+    color: #4A6CF7;
+}
+
+.nav_btn-prent {
+    position: absolute;
+    right: -98%;
+    bottom: -20%;
+}
+
+.nav_btn1,
+.nav_btn2 {
+    border: none;
+    background: transparent;
+    color: #ffffff;
+    font-size: 18px;
+    width: 100px;
+    height: 40px;
+}
+
+.dark_mode-icon {
+    position: absolute;
+    right: 20%;
+    bottom: 25%;
+    cursor: pointer;
+}
+
+.nav_btn1:hover,
+.nav_btn2:hover {
+    background: #4A6CF7;
+    border-radius: 5px;
+    transition: all 0.8s;
+}
+
+header {
+    padding: 10px 0;
+    position: relative;
+}
+
+.nav_log {
+    width: 180px;
+}
+
+nav ul {
+    bottom: 1%;
+    position: absolute;
+    left: 20%;
+    z-index: 2;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    position: relative;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+nav ul li a:before {
+    position: absolute;
+    content: " ";
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s linear;
+}
+
+nav ul li a:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    color: #4A6CF7;
+}
+
+label #btn,
+label #cancel {
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    margin-right: 20px;
+    cursor: pointer;
+    margin-top: -10px;
+    display: none;
+}
+
+label #btn {
+    font-size: 41px;
+}
+
+#toggle_button {
+    float: right;
+}
+
+#check {
+    display: none;
+}
+
+.nav_right-button {
+    font-weight: 500;
+}
+@media screen and (min-width: 1025px) {
+    .dropdown-container {
+        display: none;
+        position: absolute;
+        padding: 15px;
+        background-color: #111722;
+    }
+}
+@media screen and (max-width: 1024px) {
+    #toggle_button {
+        margin-right: -20px;
+    }
+    nav ul {
+        left: 0;
+    }
+    nav ul li a {
+        font-size: 12px;
+        margin: 0px;
+    }
+    .nav_btn-prent {
+        position: absolute;
+        right: 0%;
+        bottom: 0%;
+        padding-bottom: 1rem;
+        display: block;
+        width: 100%;
+    }
+    .nav_btn1 {
+        background-color: #4A6CF7;
+        width: 45%;
+        margin-right: 10px;
+        border-radius: 5px;
+    }
+    .nav_btn2 {
+        background-color: gray;
+        width: 45%;
+        border-radius: 5px;
+    }
+    .nav_btn2:hover {
+        background-color: gray;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    label #btn {
+        display: block;
+    }
+    .dropdown_list-a {
+        display: inline-block;
+        margin-top: 30px;
+        transition: all 0.8;
+    }
+    ul {
+        /* position: fixed; */
+        width: 100%;
+        height: 100vh;
+        background: #111722;
+        top: 62px;
+        transition: all 0.8s;
+        text-align: center;
+        z-index: 1;
+        padding-top: 15%;
+        margin: 0 !important;
+    }
+    #check:checked~ul {
+        left: -100%;
+        transition: all 0.8s;
+    }
+    #check:checked~label #btn {
+        display: none;
+    }
+    #check:checked~label #cancel {
+        display: block;
+    }
+    nav ul li {
+        display: block;
+        margin: 30px 0;
+        line-height: 20px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+}

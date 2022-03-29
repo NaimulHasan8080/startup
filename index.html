@@ -11,6 +11,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!-- css link -->
+    <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- favicon -->
@@ -26,43 +27,49 @@
 </head>
 
 <body class="container">
-    <!--  -->
+    <!-- Navbar -->
     <header>
-        <!-- Navbar -->
-        <section>
-            <nav class="navbar navbar-expand-lg navbar-light mb-4">
-                <div class="container-fluid">
-                    <img class="img-fluid me-5" src="Images/logo/Logo.png" alt="logo">
-                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon "></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                        <ul class="navbar-nav me-auto mb-2  mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Features</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white">Pages</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white">Support</a>
-                            </li>
-                        </ul>
-                        <form class="d-flex">
+        <nav class="container">
+            <input type="checkbox" id="check" />
+            <label for="check" id="toggle_button">
+                <i class="fas fa-times" id="btn"></i>
+                <i class="fas fa-bars " id="cancel"></i>
+            </label>
 
-                            <button class="btn btn-outline-primary border-0 text-white" type="submit">Sign
-                                In</button>
-                            <button class="btn btn-outline-primary border-0 text-white" type="submit">Sign Up</button>
-                        </form>
+            <a class="navbar-brand text-white text-uppercase" href="#"><img class="nav_log" src="/Images/logo/Logo.png"
+                    alt="navbar_logo" /></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li class="dropdown_list">
+
+                    <button class="dropdown-btn">Pages
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a class="dropdown_list-a" href="#">Blog Grids</a>
+                        <br>
+                        <a class="dropdown_list-a" href="#">Blog Details</a>
+                        <br>
+                        <a class="dropdown_list-a" href="#">404 Error</a>
                     </div>
-                </div>
-            </nav>
-        </section>
+                </li>
+                <li><a href="#coin">Support</a></li>
+                <li>
+                    <span class="nav_btn-prent">
+                        <button class="nav_btn1">Sign In</button>
+                        <button class="nav_btn2">Sign Up</button>
+                    </span>
+                </li>
+            </ul>
+
+
+            <span class="dark_mode-icon">
+                <i class="fa-solid fa-moon "></i>
+            </span>
+
+        </nav>
+
     </header>
 
     <main>
@@ -441,12 +448,15 @@
 
                         <div class="table-content border-right p-3">
                             <ul class="table-list">
-                                <li> <span class="check"><i class="fa-solid fa-check pe-4"></i></span></i>300 GB Storage
+                                <li> <span class="check-right"><i class="fa-solid fa-check pe-4"></i></span></i>300 GB
+                                    Storage
                                 </li>
-                                <li> <span class="check"><i class="fa-solid fa-check pe-3"></i></span></i> Unlimited
+                                <li> <span class="check-right"><i class="fa-solid fa-check pe-3"></i></span></i>
+                                    Unlimited
                                     Photos and Videos
                                 </li>
-                                <li> <span class="check"><i class="fa-solid fa-check pe-3"></i></span></i> Exclusive
+                                <li> <span class="check-right"><i class="fa-solid fa-check pe-3"></i></span></i>
+                                    Exclusive
                                     Support
                                 </li>
                                 <li> <i class="fa-solid fa-check pe-3"></i> Custom Branding Strategy</li>
@@ -470,15 +480,18 @@
 
                         <div class="table-content border-right p-3">
                             <ul class="table-list">
-                                <li> <span class="check"><i class="fa-solid fa-check pe-4"></i></span></i>400 GB Storage
+                                <li> <span class="check-right"><i class="fa-solid fa-check pe-4"></i></span></i>400 GB
+                                    Storage
                                 </li>
-                                <li> <span class="check"><i class="fa-solid fa-check pe-3"></i></span></i> Unlimited
+                                <li> <span class="check-right"><i class="fa-solid fa-check pe-3"></i></span></i>
+                                    Unlimited
                                     Photos and Videos
                                 </li>
-                                <li> <span class="check"><i class="fa-solid fa-check pe-3"></i></span></i> Exclusive
+                                <li> <span class="check-right"><i class="fa-solid fa-check pe-3"></i></span></i>
+                                    Exclusive
                                     Support
                                 </li>
-                                <li> <span class="check"><i class="fa-solid fa-check pe-3"></i></span></i> Custom
+                                <li> <span class="check-right"><i class="fa-solid fa-check pe-3"></i></span></i> Custom
                                     Branding Strategy</li>
                                 <li> <i class="fa-solid fa-check pe-3"></i> Free SEO Tools</li>
                             </ul>
@@ -501,18 +514,23 @@
 
                         <div class="table-content p-3">
                             <ul class="table-list">
-                                <li> <span class="check"><i class="fa-solid fa-check pe-4"></i></span></i>500 GB Storage
+                                <li> <span class="check-right"><i class="fa-solid fa-check pe-4"></i></span></i>500 GB
+                                    Storage
                                 </li>
-                                <li> <span class="check"><i class="fa-solid fa-check pe-3"></i></span></i> Unlimited
+                                <li> <span class="check-right"><i class="fa-solid fa-check pe-3"></i></span></i>
+                                    Unlimited
                                     Photos and Videos
                                 </li>
-                                <li> <span class="check"><i class="fa-solid fa-check pe-3"></i></span></i> Exclusive
+                                <li> <span class="check-right"><i class="fa-solid fa-check pe-3"></i></span></i>
+                                    Exclusive
                                     Support
                                 </li>
-                                <li> <span class="check"><i class="fa-solid fa-check pe-3"></i></span> Custom Branding
+                                <li> <span class="check-right"><i class="fa-solid fa-check pe-3"></i></span> Custom
+                                    Branding
                                     Strategy</li>
 
-                                <li> <span class="check"><i class="fa-solid fa-check pe-3"></i></span> Free SEO Tools
+                                <li> <span class="check-right"><i class="fa-solid fa-check pe-3"></i></span> Free SEO
+                                    Tools
                                 </li>
                             </ul>
                             <div class="text-center mt-5">
