@@ -133,3 +133,14 @@ color: var(--secondary);
     font-style: normal;
     line-height: 30px;
 }
+
+/* footer */
+.footer li{
+    list-style: none;
+}
+.footer input{
+    width: 120px;
+    background-color: #2C3443;
+    border: none;
+    border-radius: 5px;
+}
