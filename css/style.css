@@ -61,16 +61,13 @@ button{
 /* awesome features */
 .features{
     font-weight: 900;
-    font-size: 95px;
-    line-height: 118.75px;
+    font-size: 70px;
     opacity: 0.05;
-    margin-bottom: -70px;
+    margin-bottom: -50px;
 }
 /* company details */
 .company-details{
-    background: url("/Images/background/background.png");
-    opacity: 0.5;
-    border: 1px solid red;
+    background-color: #3334357a;
 }
 
 
@@ -126,4 +123,13 @@ color: var(--secondary);
     color: white;
     background: #4A6CF7;
     transform: scale(1.01);
+}
+
+
+/* blog */
+.blog-title{
+    font-weight: 600;
+    font-size: 24px;
+    font-style: normal;
+    line-height: 30px;
 }
