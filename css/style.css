@@ -53,3 +53,25 @@ button{
 .mission1{
     margin-right: -100px;
 }
+/* clients */
+.arrow{
+    padding: 5px;
+    background-color: rgba(248, 248, 248, 0.15);;
+}
+.arrow:hover{
+    background-color: #4A6CF7;
+}
+.fa-solid{
+    height: 12.96px;
+    width: 13.33px;
+}
+
+/* brand */
+.brand:hover{
+   color: blue;
+}
+
+/* simple plan */
+.table-list li{
+list-style: none;
+}
