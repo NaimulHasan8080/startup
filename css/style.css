@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Josefin+Sans:ital@1&family=Poppins&display=swap');
+
 :root{
     --secondary: gray;
+    --check: #00CB99;
 }
 
 
 body{
     background:#111722;
     color: white;
+    font-family: 'Poppins', sans-serif;
 }
 h1{
     font-family: 'Lexend';
@@ -53,6 +57,23 @@ button{
 .mission1{
     margin-right: -100px;
 }
+
+/* awesome features */
+.features{
+    font-weight: 900;
+    font-size: 95px;
+    line-height: 118.75px;
+    opacity: 0.05;
+    margin-bottom: -70px;
+}
+/* company details */
+.company-details{
+    background: url("/Images/background/background.png");
+    opacity: 0.5;
+    border: 1px solid red;
+}
+
+
 /* clients */
 .arrow{
     padding: 5px;
@@ -72,6 +93,37 @@ button{
 }
 
 /* simple plan */
+
 .table-list li{
 list-style: none;
+font-size: 18px;
+color: var(--secondary);
+}
+.check{
+    color:var(--check);
+}
+.month{
+    font-size: 55px;
+}
+.border-bottom-left{
+    border-bottom: 1px solid #2E333D;
+    border-right: 1px solid #2E333D;
+}
+.border-btm{
+    border-bottom: 1px solid #2E333D;
+}
+.border-right{
+    border-right: 1px solid #2E333D;
+}
+.btn{
+    color: white;
+    background: #79808A;
+    font-size: 18px;
+    height: 52px;
+    width: 215px;
+}
+.btn:hover{
+    color: white;
+    background: #4A6CF7;
+    transform: scale(1.01);
 }
