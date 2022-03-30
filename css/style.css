@@ -1,10 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Josefin+Sans:ital@1&family=Poppins&display=swap');
 
+/* custom Css */
 :root{
     --secondary: gray;
     --check-right: #00CB99;
 }
-
+.fs-40{
+    font-size: 40px;
+}
+.pb-20{
+    padding-bottom: 20px;
+}
+.pb-30{
+    padding-bottom: 30px;
+}
+.pb-35{
+    padding-bottom: 35px;
+}
+.pb-48{
+    padding-bottom: 48px;
+}
+.pb-50{
+    padding-bottom: 50px;
+}
+.pb-60{
+    padding-bottom: 60px;
+}
+.pb-70{
+    padding-bottom: 70px;
+}
+.pb-12{
+    padding-bottom: 12px;
+}
 
 body{
     background:#111722;
@@ -28,6 +55,30 @@ button{
     font-family: 'Lexend';
     font-weight: 500;
 }
+
+/* header */
+.header-title{
+    background: rgba(255, 255, 255, 0.08);
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+}
+
+
+
+.btn-header1{
+    height: 50px;
+    width: 182px;
+    color: white;
+}
+.btn-header2{
+    height: 24px;
+    width: 129px;
+    color: white;
+    background-color: #111722;
+}
+
 .feature{
     height: 90px;
     width: 90px;
@@ -49,14 +100,6 @@ button{
     grid-column-gap: 40px;
 }
 
-/* navbar area */
-.navbar-light .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 155, 255, 255.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-.mission1{
-    margin-right: -100px;
-}
 
 /* awesome features */
 .features{
@@ -85,11 +128,17 @@ button{
 }
 
 /* brand */
+.brand{
+    opacity: 30%;
+}
 .brand:hover{
-   color: blue;
+opacity: 100%;
 }
 
 /* simple plan */
+.table-list{
+    height: auto;
+}
 
 .table-list li{
 list-style: none;
@@ -125,6 +174,21 @@ color: var(--secondary);
     transform: scale(1.01);
 }
 
+/* dedicate */
+.team-image{
+    position: relative;
+}
+.team-social{
+    position: absolute;
+    opacity: 0;
+    font-size: 30px;
+}
+.single-member:hover .team-social{
+    opacity: 1;
+    position: relative;
+    top: -60px;
+    text-align: center;
+}
 
 /* blog */
 .blog-title{
@@ -143,4 +207,66 @@ color: var(--secondary);
     background-color: #2C3443;
     border: none;
     border-radius: 5px;
+}
+.footer ul{
+    height: auto;
+    padding: 0;
+    text-align: start;
+
+}
+/* .play-btn{
+    background-color: #2C3443;
+    color: #79808A;
+    border: none;
+    border-radius: 5px;
+} */
+
+/* Sign in page */
+.signin{
+    background: #1D232D;
+}
+.signin-section{
+    padding-left: 70px;
+    padding-top: 70px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.social-icon{
+    background: #2C3443;
+    width: auto;
+    margin-right: 10px;
+}
+.signin button:hover{
+    background-color: #2C3443;
+}
+.fa-google{
+    color: #EB4335;
+}
+.fa-twitter{
+    color: #00AFED;
+}
+.fa-facebook{
+    color: #1877F2;
+}
+.fa-github{
+    color: #79808A;
+}
+.input-section h2{
+    font-size: 16px;
+}
+.input-section input{
+    border: none;
+    background-color: #1D232D;
+    border-bottom: 1px solid #2C3443;
+    padding: 15px;
+}
+.input-section span{
+    padding-left: 40px;
+}
+.input-section{
+    padding-bottom: 50px;
+}
+.from-submit{
+    width: auto;
+    height: auto;
 }
