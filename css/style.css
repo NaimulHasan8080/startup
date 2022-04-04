@@ -23,6 +23,7 @@ body {
     line-height: 58px;
     letter-spacing: -0.5px;
     color: #FFFFFF;
+    margin-bottom: 20px;
 }
 
 h1 {
@@ -85,6 +86,22 @@ button {
 
 .pt-70 {
     padding-top: 70px;
+}
+
+.pt-130 {
+    padding-top: 130px;
+}
+
+.pb-130 {
+    padding-bottom: 130px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
 }
 
 /* header */
@@ -296,10 +313,26 @@ button {
 }
 
 @media screen and (max-width: 576px) {
+    .pb-130 {
+        padding-bottom: 50px;
+    }
+
+    .pt-130 {
+        padding-top: 50px;
+    }
+
     .signin-section {
         padding: 15px;
         border-radius: 10px;
         box-sizing: border-box;
+    }
+
+    .section-title {
+        font-size: 28px;
+        line-height: 32px;
+        letter-spacing: -0.5px;
+        color: #FFFFFF;
+        margin-bottom: 12px;
     }
 
     .features {
