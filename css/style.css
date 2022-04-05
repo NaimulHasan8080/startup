@@ -112,6 +112,7 @@ button {
     margin-bottom: 50px;
 }
 
+
 .mr-45 {
     margin-right: 45px;
 }
@@ -177,6 +178,23 @@ button {
     background-color: #3334357a;
 }
 
+.creative-section {
+    padding: 70px;
+}
+
+.creative-details {
+    padding-left: 120px;
+}
+
+.creative-details h2 {
+    width: 476px;
+    height: 100px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    font-family: 'Lexend';
+    font-style: normal;
+}
 
 /* clients */
 .arrow {
@@ -310,7 +328,9 @@ button {
     line-height: 30px;
 }
 
-/* Explore  */
+/* -------------- 
+Explore  
+------------------*/
 .explore-button a {
     display: inline-block;
     padding: 5px;
@@ -416,6 +436,23 @@ button {
 
     .explore-button {
         display: none;
+    }
+
+    .creative-section {
+        padding: 30px;
+    }
+
+    .creative-details h2 {
+        width: 328px;
+        height: 60px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .creative-details {
+        margin-top: 25px;
+        padding: 0;
     }
 
     .footer ul {
