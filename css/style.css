@@ -178,6 +178,25 @@ button {
     background-color: #3334357a;
 }
 
+.nav-link {
+    color: #FFFFFF;
+    border: none;
+}
+
+.nav-tabs .nav-link {
+    border: none;
+}
+
+.nav-tabs .nav-link:hover {
+    border-bottom: 1px solid #4A6CF7;
+}
+
+.company .nav-tabs .nav-link.active {
+    background-color: transparent;
+    color: #FFFFFF;
+
+}
+
 .creative-section {
     padding: 70px;
 }
