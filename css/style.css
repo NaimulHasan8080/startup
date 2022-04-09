@@ -1,28 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Josefin+Sans:ital@1&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;400&display=swap');
 
 /* custom Css */
 html {
     scroll-behavior: smooth;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 :root {
+    --primary: #4A6CF7;
     --secondary: gray;
     --check-right: #00CB99;
+    --light-color: #ffffff;
+    --dark-body-color: #111722;
+    --dark-text-color: #000000;
 }
 
 
 body {
-    background: #111722;
-    color: white;
+    background: var(--dark-body-color);
+    color: var(--light-color);
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
+}
+
+body.light-theme {
+    background: var(--light-color);
+    color: var(--dark-text-color);
+}
+
+.light-theme .section-title {
+    color: var(--dark-text-color);
+}
+
+/* 
+.light-theme .navbar ul li a {
+    color: var(--dark-text-color);
+} */
+
+.light-theme .navbar-dark .navbar-nav .nav-link {
+    color: var(--dark-text-color);
+}
+
+.light-theme .navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--primary);
+}
+
+.light-theme .navbar-button a {
+    color: var(--dark-text-color);
+
+}
+
+.light-theme .dropdown-btn {
+    color: var(--dark-text-color);
+}
+
+.light-theme .feature {
+    background: #000000;
 }
 
 .section-title {
     font-size: 50px;
     line-height: 58px;
     letter-spacing: -0.5px;
-    color: #FFFFFF;
+    color: var(--light-color);
     margin-bottom: 20px;
 }
 
@@ -45,6 +92,10 @@ p {
 button {
     font-family: 'Lexend';
     font-weight: 500;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* custom css */
@@ -117,10 +168,39 @@ button {
     margin-right: 45px;
 }
 
+/* -----------------
+   Navbar
+  ------------------- */
+.navbar-button a {
+    border-radius: 4px;
+    padding: 12px 30px 12px 30px;
+    color: var(--light-color);
+
+}
+
+.navbar-button a:hover {
+    background: #4A6CF7;
+    color: var(--light-color);
+}
+
+
+.dark_mode-icon {
+    cursor: pointer;
+    padding: 12px 10px;
+}
+
+.desktop-dark {
+    display: block;
+}
+
+.mobile-dark {
+    display: none;
+}
+
 /* header */
 .header-title {
     background: rgba(255, 255, 255, 0.08);
-    color: #FFFFFF;
+    color: var(--light-color);
     font-size: 18px;
     font-weight: 400;
     border: none;
@@ -137,15 +217,15 @@ button {
 .btn-header2 {
     height: 24px;
     width: 129px;
-    color: white;
-    background-color: #111722;
+    color: var(--light-color);
+    background: var(--dark-body-color);
 }
 
 .feature {
     height: 90px;
     width: 90px;
     margin-left: 120px;
-    background: rgba(255, 255, 255, 0.05);
+    background: #ffffff0d;
     border-radius: 70px;
 }
 
@@ -155,7 +235,7 @@ button {
 }
 
 .feature:hover {
-    background-color: #4A6CF7;
+    background: #4A6CF7;
 }
 
 .explore col {
@@ -175,11 +255,11 @@ button {
 
 /* company details */
 .company-details {
-    background-color: #3334357a;
+    background: #3334357a;
 }
 
 .nav-link {
-    color: #FFFFFF;
+    color: var(--light-color);
     border: none;
 }
 
@@ -192,8 +272,8 @@ button {
 }
 
 .company .nav-tabs .nav-link.active {
-    background-color: transparent;
-    color: #FFFFFF;
+    background: transparent;
+    color: var(--light-color);
 
 }
 
@@ -218,12 +298,12 @@ button {
 /* clients */
 .arrow {
     padding: 5px;
-    background-color: rgba(248, 248, 248, 0.15);
+    background: rgba(248, 248, 248, 0.15);
     ;
 }
 
 .arrow:hover {
-    background-color: #4A6CF7;
+    background: #4A6CF7;
 }
 
 .fa-solid {
@@ -273,7 +353,7 @@ button {
 }
 
 .btn {
-    color: white;
+    color: var(--light-color);
     background: #79808A;
     font-size: 18px;
     height: 52px;
@@ -281,7 +361,7 @@ button {
 }
 
 .btn:hover {
-    color: white;
+    color: var(--light-color);
     background: #4A6CF7;
     transform: scale(1.01);
 }
@@ -319,7 +399,7 @@ button {
 .team-social a {
     display: inline-block;
     background: rgba(255, 255, 255, 0.5);
-    color: #FFFFFF;
+    color: var(--light-color);
     backdrop-filter: blur(3px);
     padding: 5px;
     font-size: 16px;
@@ -353,7 +433,7 @@ Explore
 .explore-button a {
     display: inline-block;
     padding: 5px;
-    color: #FFFFFF;
+    color: var(--light-color);
     font-weight: 500;
     line-height: 24px;
     font-size: 18px;
@@ -383,7 +463,7 @@ Explore
 
 .footer input {
     width: 120px;
-    background-color: #2C3443;
+    background: #2C3443;
     border: none;
     border-radius: 5px;
 }
@@ -404,7 +484,7 @@ Explore
 }
 
 .footer ul a:hover {
-    color: #FFFFFF;
+    color: var(--light-color);
 }
 
 
@@ -442,7 +522,7 @@ Explore
         font-size: 28px;
         line-height: 32px;
         letter-spacing: -0.5px;
-        color: #FFFFFF;
+        color: var(--light-color);
         margin-bottom: 12px;
     }
 
@@ -486,8 +566,12 @@ Explore
     margin-right: 10px;
 }
 
+/* .social-icon:hover {
+    background: #0d6efd;
+} */
+
 .signin button:hover {
-    background-color: #2C3443;
+    background: #0d6efd;
 }
 
 .line-between {
@@ -539,7 +623,7 @@ Explore
 }
 
 .contact-social a i:hover {
-    color: #FFFFFF;
+    color: var(--light-color);
 
 }
 
@@ -569,6 +653,14 @@ Explore
     .contact-title {
         margin-top: 25px;
     }
+
+    .mobile-dark {
+        display: block;
+    }
+
+    .desktop-dark {
+        display: none;
+    }
 }
 
 .me-2 .fa-google {
@@ -593,7 +685,7 @@ Explore
 
 .input-section input {
     border: none;
-    background-color: #1D232D;
+    background: #1D232D;
     border-bottom: 1px solid #2C3443;
     padding: 15px;
 }

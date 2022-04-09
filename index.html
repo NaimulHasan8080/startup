@@ -11,7 +11,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!-- css link -->
-    <link rel="stylesheet" href="css/navbar.css">
+    <!-- <link rel="stylesheet" href="css/navbar.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom.css">
 
@@ -28,52 +28,60 @@
 
 </head>
 
-<body class="container">
+<body class="">
     <!-- Navbar -->
     <header>
-        <section>
-            <nav>
-                <input type="checkbox" id="check" />
-                <label for="check" id="toggle_button">
-                    <i class="fas fa-times" id="btn"></i>
-                    <i class="fas fa-bars " id="cancel"></i>
-                </label>
-
-                <a class="navbar-brand text-white text-uppercase" href="#"><img class="nav_log"
-                        src="/Images/logo/Logo.png" alt="navbar_logo" /></a>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li class="dropdown_list">
-
-                        <button class="dropdown-btn">Pages
-                            <i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-container">
-                            <a class="dropdown_list-a" href="#">Blog Grids</a>
-                            <br>
-                            <a class="dropdown_list-a" href="#">Blog Details</a>
-                            <br>
-                            <a class="dropdown_list-a" href="#">404 Error</a>
+        <section class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark ">
+                <div class="container-fluid">
+                    <img src="Images/logo/Logo.png" alt="">
+                    <span class="dark_mode-icon mobile-dark" id="dark-mobile">
+                        <i class="fa-solid fa-sun dark-mood" id=""></i>
+                    </span>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Features</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Blog Grids</a></li>
+                                    <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                                    <li>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">404</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ">Support</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex navbar-button">
+                            <span class="dark_mode-icon desktop-dark" id="dark-desktop">
+                                <i class="fa-solid fa-sun "></i>
+                            </span>
+                            <a href="signIn.html">Sign In</a>
+                            <a href="#">Sign Up</a>
                         </div>
-                    </li>
-                    <li><a href="#coin">Support</a></li>
-                    <li>
-                        <span class="nav_btn-prent">
-                            <a class="sign-in" href="signIn.html"><button class="nav_btn1">Sign In</button></a>
-                            <a class="sign-in" href="#"><button class="nav_btn2">Sign Up</button></a>
-                        </span>
-                    </li>
-                </ul>
-
-
-                <span class="dark_mode-icon">
-                    <i class="fa-solid fa-moon "></i>
-                </span>
-
+                    </div>
+                </div>
             </nav>
         </section>
     </header>
+
+
 
     <main>
         <!-- nav header start -->
@@ -101,124 +109,126 @@
 
         <!--Awesome Features start-->
         <section class="pt-130">
-            <div>
-                <h2 class="features text-center">FEATURES</h2>
-                <h1 class="text-center section-title fw-bold">Our Unique & awesome <br> Core Features</h1>
-                <p class="text-center text-secondary mb-80">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptatum
-                    ratione quaerat
-                    <br> sit amet consectetur adipisicing elit. Voluptatum ratione quaerat magnam aspernatur
-                    magnam?
-                </p>
-            </div>
-            <div>
-                <div class="row row-cols-1 row-cols-md-3 row-cols-md-3 g-3">
-                    <div class="col">
-                        <div class="">
-                            <div class="feature">
-                                <img src="Images/frame/Frame1.png" class="mt-4 ms-4 card-img-top features-image "
-                                    alt="...">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title text-center">Crafted for Startups</h5>
-                                <p class="card-text text-secondary">Lorem ipsum dolor sit, amet consectetur
-                                    adipisicing
-                                    elit. Maxime quisquam porro ab
+            <div class="container">
+                <div>
+                    <h2 class="features text-center">FEATURES</h2>
+                    <h1 class="text-center section-title fw-bold">Our Unique & awesome <br> Core Features</h1>
+                    <p class="text-center text-secondary mb-80">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatum
+                        ratione quaerat
+                        <br> sit amet consectetur adipisicing elit. Voluptatum ratione quaerat magnam aspernatur
+                        magnam?
+                    </p>
+                </div>
+                <div>
+                    <div class="row row-cols-1 row-cols-md-3 row-cols-md-3 g-3">
+                        <div class="col">
+                            <div class="">
+                                <div class="feature">
+                                    <img src="Images/frame/Frame1.png" class="mt-4 ms-4 card-img-top features-image "
+                                        alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Crafted for Startups</h5>
+                                    <p class="card-text text-secondary">Lorem ipsum dolor sit, amet consectetur
+                                        adipisicing
+                                        elit. Maxime quisquam porro ab
 
-                                </p>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="">
-                            <div class="feature">
-                                <img src="Images/frame/Frame2.png" class="mt-4 ms-4 card-img-top features-image "
-                                    alt="...">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title text-center">High-quality Design</h5>
-                                <p class="card-text text-secondary">Lorem ipsum dolor sit, amet consectetur
-                                    adipisicing
-                                    elit. Maxime quisquam porro ab
+                        <div class="col">
+                            <div class="">
+                                <div class="feature">
+                                    <img src="Images/frame/Frame2.png" class="mt-4 ms-4 card-img-top features-image "
+                                        alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">High-quality Design</h5>
+                                    <p class="card-text text-secondary">Lorem ipsum dolor sit, amet consectetur
+                                        adipisicing
+                                        elit. Maxime quisquam porro ab
 
-                                </p>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="">
-                            <div class="feature">
-                                <img src="Images/frame/Frame3.png" class="mt-4 ms-4 card-img-top features-image "
-                                    alt="...">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title text-center">All Essential Sections</h5>
-                                <p class="card-text text-secondary">Lorem ipsum dolor sit, amet consectetur
-                                    adipisicing
-                                    elit. Maxime quisquam porro ab
+                        <div class="col">
+                            <div class="">
+                                <div class="feature">
+                                    <img src="Images/frame/Frame3.png" class="mt-4 ms-4 card-img-top features-image "
+                                        alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">All Essential Sections</h5>
+                                    <p class="card-text text-secondary">Lorem ipsum dolor sit, amet consectetur
+                                        adipisicing
+                                        elit. Maxime quisquam porro ab
 
-                                </p>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="">
-                            <div class="feature ">
-                                <img src="Images/frame/Frame4.png" class="mt-4 ms-4 card-img-top features-image "
-                                    alt="...">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title text-center">Speed Optimized</h5>
-                                <p class="card-text text-secondary">Lorem ipsum dolor sit, amet consectetur
-                                    adipisicing
-                                    elit. Maxime quisquam porro ab
+                        <div class="col">
+                            <div class="">
+                                <div class="feature ">
+                                    <img src="Images/frame/Frame4.png" class="mt-4 ms-4 card-img-top features-image "
+                                        alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Speed Optimized</h5>
+                                    <p class="card-text text-secondary">Lorem ipsum dolor sit, amet consectetur
+                                        adipisicing
+                                        elit. Maxime quisquam porro ab
 
-                                </p>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col ">
-                        <div class="">
-                            <div class="feature">
-                                <img src="Images/frame/Frame5.png" class="mt-4 ms-4 card-img-top features-image "
-                                    alt="...">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title text-center">Fully Customizable</h5>
-                                <p class="card-text text-secondary">Lorem ipsum dolor sit, amet consectetur
-                                    adipisicing
-                                    elit. Maxime quisquam porro ab
+                        <div class="col ">
+                            <div class="">
+                                <div class="feature">
+                                    <img src="Images/frame/Frame5.png" class="mt-4 ms-4 card-img-top features-image "
+                                        alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Fully Customizable</h5>
+                                    <p class="card-text text-secondary">Lorem ipsum dolor sit, amet consectetur
+                                        adipisicing
+                                        elit. Maxime quisquam porro ab
 
-                                </p>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="">
-                            <div class="feature">
-                                <img src="Images/frame/Frame6.png" class="mt-4 ms-4 card-img-top features-image "
-                                    alt="...">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title text-center">Regular Updates</h5>
-                                <p class="card-text text-secondary">Lorem ipsum dolor sit, amet consectetur
-                                    adipisicing
-                                    elit. Maxime quisquam porro ab
+                        <div class="col">
+                            <div class="">
+                                <div class="feature">
+                                    <img src="Images/frame/Frame6.png" class="mt-4 ms-4 card-img-top features-image "
+                                        alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Regular Updates</h5>
+                                    <p class="card-text text-secondary">Lorem ipsum dolor sit, amet consectetur
+                                        adipisicing
+                                        elit. Maxime quisquam porro ab
 
-                                </p>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
             </div>
         </section>
         <!--Awesome Features end-->
 
 
-        <!-- Details start-->
+        <!-- Details About start-->
         <section class="pt-130">
-            <div>
+            <div class="container">
                 <div class="text-center">
                     <h2 class="features text-center">ABOUT US</h2>
                     <h1 class=" section-title  fw-bold">Know Details About <br> Our Company</h1>
@@ -255,7 +265,7 @@
                                     <div
                                         class="col-12 col-md-7 col-lg-7 creative-details d-flex align-items-center justify-content-center ">
                                         <div>
-                                            <h2>We are Creative Digital <br>Agency Based in USA</h2>
+                                            <h2 class="text-white">We are Creative Digital <br>Agency Based in USA</h2>
                                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga neque vitae
                                                 odit facilis quae, quibusdam, nesciunt id quaerat, minima eveniet quis
                                                 corrupti excepturi rem cupiditate culpa enim. Recusandae, voluptas
@@ -302,163 +312,168 @@
                     </div>
                 </div>
             </div>
-
-            </div>
         </section>
         <!-- Details end-->
 
         <!-- Dedicated team start-->
         <section class="pt-130">
-            <div class=" text-center">
-                <h2 class="features text-center">OUR TEAM</h2>
-                <h1 class="section-title fw-bold">Meet With Our Creative <br> Dedicated Team</h1>
-                <p class="text-secondary mb-80">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi
-                    similique
-                    delectus vitae quibusdam
-                    nihil!
-                </p>
-            </div>
+            <div class="container">
+                <div class=" text-center">
+                    <h2 class="features text-center">OUR TEAM</h2>
+                    <h1 class="section-title fw-bold">Meet With Our Creative <br> Dedicated Team</h1>
+                    <p class="text-secondary mb-80">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi
+                        similique
+                        delectus vitae quibusdam
+                        nihil!
+                    </p>
+                </div>
 
-            <div>
-                <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-5">
-                    <div class="col">
-                        <div class="single-member">
-                            <div class="team-image">
-                                <img src="Images/team/Rectangle3.png" class="card-img-top" alt="...">
-                                <div class="team-social">
-                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
-                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <div>
+                    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-5">
+                        <div class="col">
+                            <div class="single-member">
+                                <div class="team-image">
+                                    <img src="Images/team/Rectangle3.png" class="card-img-top" alt="...">
+                                    <div class="team-social">
+                                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+                                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
 
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Olivia Andrium</h5>
+                                    <p class="card-text text-center text-secondary">Project Manager </p>
                                 </div>
                             </div>
-                            <div class="card-body">
-                                <h5 class="card-title text-center">Olivia Andrium</h5>
-                                <p class="card-text text-center text-secondary">Project Manager </p>
-                            </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="single-member">
-                            <div class="team-image">
-                                <img src="Images/team/Rectangle1.png" class="card-img-top" alt="...">
-                                <div class="team-social">
-                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
-                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <div class="col">
+                            <div class="single-member">
+                                <div class="team-image">
+                                    <img src="Images/team/Rectangle1.png" class="card-img-top" alt="...">
+                                    <div class="team-social">
+                                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+                                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
 
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Jemse Kemorun</h5>
+                                    <p class="card-text text-center text-secondary">Product Designer </p>
                                 </div>
                             </div>
-                            <div class="card-body">
-                                <h5 class="card-title text-center">Jemse Kemorun</h5>
-                                <p class="card-text text-center text-secondary">Product Designer </p>
-                            </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="single-member">
-                            <div class="team-image">
-                                <img src="Images/team/Rectangle2.png" class="card-img-top" alt="...">
-                                <div class="team-social">
-                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
-                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <div class="col">
+                            <div class="single-member">
+                                <div class="team-image">
+                                    <img src="Images/team/Rectangle2.png" class="card-img-top" alt="...">
+                                    <div class="team-social">
+                                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+                                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
 
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Avi Pestarica</h5>
+                                    <p class="card-text text-center text-secondary">Web Designer</p>
                                 </div>
                             </div>
-                            <div class="card-body">
-                                <h5 class="card-title text-center">Avi Pestarica</h5>
-                                <p class="card-text text-center text-secondary">Web Designer</p>
-                            </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- Dedicated team start-->
+        <!-- Dedicated team finish-->
 
         <!-- Explore start-->
         <section class="pt-130">
-            <div class=" text-center">
-                <h1 class="section-title fw-bold">Explore Our Latest Case Studies</h1>
-                <p class="mb-80">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero corporis deleniti
-                    cupiditate, alias
-                    suscipit minima, quam non </p>
-            </div>
-            <div class="container explore">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="button-group filter-button-group explore-button text-center">
-                            <a data-filter="*">All</a>
-                            <a data-filter=".branding">Branding Strategy</a>
-                            <a data-filter=".digital">Digital Experiences</a>
-                            <a data-filter=".ecommerce">E-commerce</a>
-
-                        </div>
-                    </div>
+            <div class="container">
+                <div class=" text-center">
+                    <h1 class="section-title fw-bold">Explore Our Latest Case Studies</h1>
+                    <p class="mb-80">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero corporis deleniti
+                        cupiditate, alias
+                        suscipit minima, quam non </p>
                 </div>
-                <div class="row">
-                    <div class="col-sm-12 col-md-8 col-lg-8 ">
-                        <div>
-                            <img class="img-fluid my-3" src="Images/case/Rectangle1.png" alt="">
-                        </div>
-                        <div class="row ">
-                            <div class="col-sm-12 col-md-6 col-lg-6 gy-3">
-                                <img class="img-fluid my-3" src="Images/case/Rectangle2.png" alt="">
-                            </div>
-                            <div class="col-sm-12 col-md-6 col-lg-6 gy-3">
-                                <img class="img-fluid my-3" src="Images/case/Rectangle3.png" alt="">
+                <div class="container explore">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="button-group filter-button-group explore-button text-center">
+                                <a data-filter="*">All</a>
+                                <a data-filter=".branding">Branding Strategy</a>
+                                <a data-filter=".digital">Digital Experiences</a>
+                                <a data-filter=".ecommerce">E-commerce</a>
+
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-8 col-lg-8 ">
+                            <div>
+                                <img class="img-fluid my-3" src="Images/case/Rectangle1.png" alt="">
+                            </div>
+                            <div class="row ">
+                                <div class="col-sm-12 col-md-6 col-lg-6 gy-3">
+                                    <img class="img-fluid my-3" src="Images/case/Rectangle2.png" alt="">
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6 gy-3">
+                                    <img class="img-fluid my-3" src="Images/case/Rectangle3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
 
-                    <div class="col-sm-12 col-md-4 col-lg-4 ">
-                        <img class="img-fluid my-3" src="Images/case/Rectangle4.png" alt="">
+                        <div class="col-sm-12 col-md-4 col-lg-4 ">
+                            <img class="img-fluid my-3" src="Images/case/Rectangle4.png" alt="">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="text-center">
-                <button class="btn border-0 bg-primary text-white">See More Projects <i
-                        class="fa-solid fa-arrow-right p-2"></i></button>
+                <div class="text-center">
+                    <button class="btn border-0 bg-primary text-white">See More Projects <i
+                            class="fa-solid fa-arrow-right p-2"></i></button>
+                </div>
             </div>
         </section>
         <!-- Explore end-->
 
         <!-- our clients start-->
         <section class="pt-130">
-            <div class=" text-center">
-                <h2 class="features text-center">TESTIMONIALS</h2>
-                <h1 class="section-title fw-bold">What Our Clients <br> Say About Us</h1>
-                <p class="text-secondary mb-80">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat velit
-                    nisi
-                    quidem quod deleniti
-                    obcaecati.</p>
-            </div>
+            <div class="container">
+                <div class=" text-center">
+                    <h2 class="features text-center">TESTIMONIALS</h2>
+                    <h1 class="section-title fw-bold">What Our Clients <br> Say About Us</h1>
+                    <p class="text-secondary mb-80">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat
+                        velit
+                        nisi
+                        quidem quod deleniti
+                        obcaecati.</p>
+                </div>
 
-            <div>
-                <div class="row company-details">
-                    <div class="col-sm-12 col-md-6 col-lg-7 d-flex justify-content-center align-items-center">
-                        <div class="text-center">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet totam atque itaque
-                                qui
-                                molestiae. Cumque ipsa nostrum unde quaerat saepe aut corporis eveniet adipisci at
-                                pariatur?
-                                Cumque itaque distinctio non!</p>
-                            <h5>Deniyal Shifer</h5>
-                            <p>Founder @democompany.</p>
-                            <div>
-                                <span class="arrow rounded-circle"><i class="fa-solid fa-arrow-right"></i></span>
-                                <span class="arrow rounded-circle"><i class="fa-solid fa-arrow-left"></i></span>
+                <div>
+                    <div class="row company-details">
+                        <div class="col-sm-12 col-md-6 col-lg-7 d-flex justify-content-center align-items-center">
+                            <div class="text-center">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet totam atque itaque
+                                    qui
+                                    molestiae. Cumque ipsa nostrum unde quaerat saepe aut corporis eveniet adipisci at
+                                    pariatur?
+                                    Cumque itaque distinctio non!</p>
+                                <h5>Deniyal Shifer</h5>
+                                <p>Founder @democompany.</p>
+                                <div>
+                                    <span class="arrow rounded-circle"><i class="fa-solid fa-arrow-right"></i></span>
+                                    <span class="arrow rounded-circle"><i class="fa-solid fa-arrow-left"></i></span>
+                                </div>
                             </div>
+
+
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-5">
+                            <img class="img-fluid " src="Images/clients/Image.png" alt="">
                         </div>
 
-
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-5">
-                        <img class="img-fluid " src="Images/clients/Image.png" alt="">
-                    </div>
-
                 </div>
             </div>
         </section>
@@ -466,217 +481,228 @@
 
         <!-- Global brands start-->
         <section class="pt-130">
-            <div class=" text-center">
-                <h1 class="section-title fw-bold">Trusted by Global Brands</h1>
-                <p class="text-secondary mb-80">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id unde
-                    voluptatibus ipsa minus
-                    voluptatem
-                    veniam ipsum.</p>
-            </div>
             <div class="container">
-                <div class="row g-5 ">
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <img class="img-fluid brand" src="Images/brand/logitech.png" alt="">
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <img class="img-fluid brand" src="Images/brand/dropcam.png" alt="">
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <img class="img-fluid brand" src="Images/brand/amd-logo.png" alt="">
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <img class="img-fluid brand" src="Images/brand/nike.png" alt="">
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <img class="img-fluid brand" src="Images/brand/marvel.png" alt="">
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2 mb-5">
-                        <img class="img-fluid brand" src="Images/brand/amazon.png" alt="">
+                <div class=" text-center">
+                    <h1 class="section-title fw-bold">Trusted by Global Brands</h1>
+                    <p class="text-secondary mb-80">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id unde
+                        voluptatibus ipsa minus
+                        voluptatem
+                        veniam ipsum.</p>
+                </div>
+                <div class="container">
+                    <div class="row g-5 ">
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <img class="img-fluid brand" src="Images/brand/logitech.png" alt="">
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <img class="img-fluid brand" src="Images/brand/dropcam.png" alt="">
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <img class="img-fluid brand" src="Images/brand/amd-logo.png" alt="">
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <img class="img-fluid brand" src="Images/brand/nike.png" alt="">
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <img class="img-fluid brand" src="Images/brand/marvel.png" alt="">
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 mb-5">
+                            <img class="img-fluid brand" src="Images/brand/amazon.png" alt="">
+                        </div>
                     </div>
                 </div>
+                <hr>
             </div>
-            <hr>
         </section>
         <!-- Global brands end-->
 
         <!-- Simple Plans start-->
-        <section class="container pt-130 simple-plan">
-            <div class="text-center ">
-                <h2 class="features text-center">PRICING PLANS</h2>
-                <h1 class="section-title fw-bold">Affordable Pricing With <br> Simple Plans</h1>
-                <p class="text-secondary mb-80">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis
-                    tortor eros. <br>
-                    Donec vitae tortor lacus. Phasellus aliquam ante in maximus.</p>
-            </div>
-            <div>
-                <div class="row g-0 my-5">
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class=" text-center border-bottom-left p-3">
-                            <h1>Free</h1>
-                            <p>The most basic plan</p>
-                        </div>
-
-                        <div class=" text-center border-bottom-left p-3">
-                            <h5>s<span class="month">0</span>month</h5>
-                            <p>Lorem ipsum dolor sit ametion <br>
-                                consectetur adipisc elit.</p>
-                        </div>
-
-                        <div class="table-content border-right p-3">
-                            <ul class="table-list">
-                                <li> <span class="check-right"><i class="fa-solid fa-check pe-4"></i></span></i>300
-                                    GB
-                                    Storage
-                                </li>
-                                <li> <span class="check-right"><i class="fa-solid fa-check pe-3"></i></span></i>
-                                    Unlimited
-                                    Photos and Videos
-                                </li>
-                                <li> <span class="check-right"><i class="fa-solid fa-check pe-3"></i></span></i>
-                                    Exclusive
-                                    Support
-                                </li>
-                                <li> <i class="fa-solid fa-check pe-3"></i> Custom Branding Strategy</li>
-                                <li> <i class="fa-solid fa-check pe-3"></i> Free SEO Tools</li>
-                            </ul>
-                            <div class="text-center mt-5">
-                                <button class="btn ">Join This Plan <i class="fa-solid fa-arrow-right p-2"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class=" text-center border-bottom-left p-3">
-                            <h1>Basic</h1>
-                            <p>The most pupular plan</p>
-                        </div>
-
-                        <div class=" text-center border-bottom-left p-3">
-                            <h5>s<span class="month">29</span>month</h5>
-                            <p>Lorem ipsum dolor sit ametion consectetur adipisc elit.</p>
-                        </div>
-
-                        <div class="table-content border-right p-3">
-                            <ul class="table-list">
-                                <li> <span class="check-right"><i class="fa-solid fa-check pe-4"></i></span></i>400
-                                    GB
-                                    Storage
-                                </li>
-                                <li> <span class="check-right"><i class="fa-solid fa-check pe-3"></i></span></i>
-                                    Unlimited
-                                    Photos and Videos
-                                </li>
-                                <li> <span class="check-right"><i class="fa-solid fa-check pe-3"></i></span></i>
-                                    Exclusive
-                                    Support
-                                </li>
-                                <li> <span class="check-right"><i class="fa-solid fa-check pe-3"></i></span></i>
-                                    Custom
-                                    Branding Strategy</li>
-                                <li> <i class="fa-solid fa-check pe-3"></i> Free SEO Tools</li>
-                            </ul>
-
-                            <div class="text-center mt-5">
-                                <button class="btn ">Join This Plan <i class="fa-solid fa-arrow-right p-2"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class=" text-center border-btm p-3">
-                            <h1>Premium</h1>
-                            <p>The most premium plan</p>
-                        </div>
-
-                        <div class=" text-center border-btm p-3">
-                            <h5>s<span class="month">99</span>month</h5>
-                            <p>Lorem ipsum dolor sit ametion consectetur adipisc elit.</p>
-                        </div>
-
-                        <div class="table-content p-3">
-                            <ul class="table-list">
-                                <li> <span class="check-right"><i class="fa-solid fa-check pe-4"></i></span></i>500
-                                    GB
-                                    Storage
-                                </li>
-                                <li> <span class="check-right"><i class="fa-solid fa-check pe-3"></i></span></i>
-                                    Unlimited
-                                    Photos and Videos
-                                </li>
-                                <li> <span class="check-right"><i class="fa-solid fa-check pe-3"></i></span></i>
-                                    Exclusive
-                                    Support
-                                </li>
-                                <li> <span class="check-right"><i class="fa-solid fa-check pe-3"></i></span> Custom
-                                    Branding
-                                    Strategy</li>
-
-                                <li> <span class="check-right"><i class="fa-solid fa-check pe-3"></i></span> Free
-                                    SEO
-                                    Tools
-                                </li>
-                            </ul>
-                            <div class="text-center mt-5">
-                                <button class="btn ">Join This Plan <i class="fa-solid fa-arrow-right p-2"></i></button>
-                            </div>
-                        </div>
-                    </div>
+        <section class="pt-130 simple-plan">
+            <div class="container">
+                <div class="text-center ">
+                    <h2 class="features text-center">PRICING PLANS</h2>
+                    <h1 class="section-title fw-bold">Affordable Pricing With <br> Simple Plans</h1>
+                    <p class="text-secondary mb-80">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                        convallis
+                        tortor eros. <br>
+                        Donec vitae tortor lacus. Phasellus aliquam ante in maximus.</p>
                 </div>
+                <div>
+                    <div class="row g-0 my-5">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class=" text-center border-bottom-left p-3">
+                                <h1>Free</h1>
+                                <p>The most basic plan</p>
+                            </div>
 
+                            <div class=" text-center border-bottom-left p-3">
+                                <h5>s<span class="month">0</span>month</h5>
+                                <p>Lorem ipsum dolor sit ametion <br>
+                                    consectetur adipisc elit.</p>
+                            </div>
+
+                            <div class="table-content border-right p-3">
+                                <ul class="table-list">
+                                    <li> <span class="check-right"><i class="fa-solid fa-check pe-4"></i></span></i>300
+                                        GB
+                                        Storage
+                                    </li>
+                                    <li> <span class="check-right"><i class="fa-solid fa-check pe-3"></i></span></i>
+                                        Unlimited
+                                        Photos and Videos
+                                    </li>
+                                    <li> <span class="check-right"><i class="fa-solid fa-check pe-3"></i></span></i>
+                                        Exclusive
+                                        Support
+                                    </li>
+                                    <li> <i class="fa-solid fa-check pe-3"></i> Custom Branding Strategy</li>
+                                    <li> <i class="fa-solid fa-check pe-3"></i> Free SEO Tools</li>
+                                </ul>
+                                <div class="text-center mt-5">
+                                    <button class="btn ">Join This Plan <i
+                                            class="fa-solid fa-arrow-right p-2"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class=" text-center border-bottom-left p-3">
+                                <h1>Basic</h1>
+                                <p>The most pupular plan</p>
+                            </div>
+
+                            <div class=" text-center border-bottom-left p-3">
+                                <h5>s<span class="month">29</span>month</h5>
+                                <p>Lorem ipsum dolor sit ametion consectetur adipisc elit.</p>
+                            </div>
+
+                            <div class="table-content border-right p-3">
+                                <ul class="table-list">
+                                    <li> <span class="check-right"><i class="fa-solid fa-check pe-4"></i></span></i>400
+                                        GB
+                                        Storage
+                                    </li>
+                                    <li> <span class="check-right"><i class="fa-solid fa-check pe-3"></i></span></i>
+                                        Unlimited
+                                        Photos and Videos
+                                    </li>
+                                    <li> <span class="check-right"><i class="fa-solid fa-check pe-3"></i></span></i>
+                                        Exclusive
+                                        Support
+                                    </li>
+                                    <li> <span class="check-right"><i class="fa-solid fa-check pe-3"></i></span></i>
+                                        Custom
+                                        Branding Strategy</li>
+                                    <li> <i class="fa-solid fa-check pe-3"></i> Free SEO Tools</li>
+                                </ul>
+
+                                <div class="text-center mt-5">
+                                    <button class="btn ">Join This Plan <i
+                                            class="fa-solid fa-arrow-right p-2"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class=" text-center border-btm p-3">
+                                <h1>Premium</h1>
+                                <p>The most premium plan</p>
+                            </div>
+
+                            <div class=" text-center border-btm p-3">
+                                <h5>s<span class="month">99</span>month</h5>
+                                <p>Lorem ipsum dolor sit ametion consectetur adipisc elit.</p>
+                            </div>
+
+                            <div class="table-content p-3">
+                                <ul class="table-list">
+                                    <li> <span class="check-right"><i class="fa-solid fa-check pe-4"></i></span></i>500
+                                        GB
+                                        Storage
+                                    </li>
+                                    <li> <span class="check-right"><i class="fa-solid fa-check pe-3"></i></span></i>
+                                        Unlimited
+                                        Photos and Videos
+                                    </li>
+                                    <li> <span class="check-right"><i class="fa-solid fa-check pe-3"></i></span></i>
+                                        Exclusive
+                                        Support
+                                    </li>
+                                    <li> <span class="check-right"><i class="fa-solid fa-check pe-3"></i></span> Custom
+                                        Branding
+                                        Strategy</li>
+
+                                    <li> <span class="check-right"><i class="fa-solid fa-check pe-3"></i></span> Free
+                                        SEO
+                                        Tools
+                                    </li>
+                                </ul>
+                                <div class="text-center mt-5">
+                                    <button class="btn ">Join This Plan <i
+                                            class="fa-solid fa-arrow-right p-2"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
         <!-- Simple Plans end  -->
 
         <!-- Blogs start-->
         <section class="pt-130">
-            <div class="text-center ">
-                <h2 class="features text-center">BLOGS</h2>
-                <h1 class="section-title fw-bold">Latest News & Articles
-                    From Our Blog</h1>
-                <p class="text-secondary mb-80">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis
-                    tortor eros. <br>
-                    Donec vitae tortor lacus. Phasellus aliquam ante in maximus.</p>
-            </div>
-
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                <div class="col">
-                    <div class="">
-                        <img src="Images/blog/blog1.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text"><span><i class="fa-solid fa-address-card me-2"></i> Musharof
-                                    Chy</span>
-                                <span class="ms-3"><i class="fa-solid fa-calendar me-2"></i> 25 Dec, 2025</span>
-                            </p>
-                            <h3 class="blog-title">Free advertising for your
-                                online business</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="">
-                        <img src="Images/blog/blog2.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text"><span><i class="fa-solid fa-address-card me-2"></i> Musharof
-                                    Chy</span>
-                                <span class="ms-3"><i class="fa-solid fa-calendar me-2"></i> 19 Mar, 2025</span>
-                            </p>
-                            <h3 class="blog-title">9 simple ways to improve
-                                your design skills</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="">
-                        <img src="Images/blog/blog3.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text"><span><i class="fa-solid fa-address-card me-2"></i> Musharof
-                                    Chy</span>
-                                <span class="ms-3"><i class="fa-solid fa-calendar me-2"></i> 15 Feb, 2025</span>
-                            </p>
-                            <h3 class="blog-title">Tips to quickly improve your
-                                coding speed.</h3>
-                        </div>
-                    </div>
+            <div class="container">
+                <div class="text-center ">
+                    <h2 class="features text-center">BLOGS</h2>
+                    <h1 class="section-title fw-bold">Latest News & Articles
+                        From Our Blog</h1>
+                    <p class="text-secondary mb-80">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                        convallis
+                        tortor eros. <br>
+                        Donec vitae tortor lacus. Phasellus aliquam ante in maximus.</p>
                 </div>
 
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div class="col">
+                        <div class="">
+                            <img src="Images/blog/blog1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text"><span><i class="fa-solid fa-address-card me-2"></i> Musharof
+                                        Chy</span>
+                                    <span class="ms-3"><i class="fa-solid fa-calendar me-2"></i> 25 Dec, 2025</span>
+                                </p>
+                                <h3 class="blog-title">Free advertising for your
+                                    online business</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="">
+                            <img src="Images/blog/blog2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text"><span><i class="fa-solid fa-address-card me-2"></i> Musharof
+                                        Chy</span>
+                                    <span class="ms-3"><i class="fa-solid fa-calendar me-2"></i> 19 Mar, 2025</span>
+                                </p>
+                                <h3 class="blog-title">9 simple ways to improve
+                                    your design skills</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="">
+                            <img src="Images/blog/blog3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text"><span><i class="fa-solid fa-address-card me-2"></i> Musharof
+                                        Chy</span>
+                                    <span class="ms-3"><i class="fa-solid fa-calendar me-2"></i> 15 Feb, 2025</span>
+                                </p>
+                                <h3 class="blog-title">Tips to quickly improve your
+                                    coding speed.</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
         <!-- Blogs end-->
@@ -684,57 +710,59 @@
         <!-- contacts section start -->
         <section class="pt-130 pb-130 contacts">
             <div class="container">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-12 col-md-6 col-lg-6">
-                        <h2 class="features">SUPPORT</h2>
-                        <h1 class="section-title fw-bold">Need Any Help? <br>
-                            Say hello</h1>
-                        <p class="text-secondary mb-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit <br>
-                            Donec vitae tortor aliquam ante.</p>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-6">
-                        <div class="d-flex justify-content-center align-items-center">
-                            <div class="divider me-4"></div>
-                            <h3>info@startup.com</h3>
+                <div>
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-12 col-md-6 col-lg-6">
+                            <h2 class="features">SUPPORT</h2>
+                            <h1 class="section-title fw-bold">Need Any Help? <br>
+                                Say hello</h1>
+                            <p class="text-secondary mb-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit <br>
+                                Donec vitae tortor aliquam ante.</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="divider me-4"></div>
+                                <h3>info@startup.com</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <hr>
-            <div class="contact-info mt-50">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-12 col-md-3 col-lg-3">
-                        <div class="contact-title">
-                            <h4>Email Address</h4>
-                            <p>support@startup.com</p>
+                <hr>
+                <div class="contact-info mt-50">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-12 col-md-3 col-lg-3">
+                            <div class="contact-title">
+                                <h4>Email Address</h4>
+                                <p>support@startup.com</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-3 col-lg-3">
-                        <div class="contact-title">
-                            <h4>Phone Number</h4>
-                            <p>+009 8754 3433 223</p>
+                        <div class="col-12 col-md-3 col-lg-3">
+                            <div class="contact-title">
+                                <h4>Phone Number</h4>
+                                <p>+009 8754 3433 223</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-3 col-lg-3">
-                        <div class="contact-title">
-                            <h4>Office Location</h4>
-                            <p>76/A, Green valle, Califonia USA.</p>
+                        <div class="col-12 col-md-3 col-lg-3">
+                            <div class="contact-title">
+                                <h4>Office Location</h4>
+                                <p>76/A, Green valle, Califonia USA.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-3 col-lg-3  ">
-                        <div class="contact-social contact-title">
-                            <a href="#" class="me-3">
-                                <i class="fa-brands fa-facebook"></i>
-                            </a>
-                            <a href="#" class="me-3">
-                                <i class="fa-brands fa-twitter"></i>
-                            </a>
-                            <a href="#" class="me-3">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
+                        <div class="col-12 col-md-3 col-lg-3  ">
+                            <div class="contact-social contact-title">
+                                <a href="#" class="me-3">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                                <a href="#" class="me-3">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a href="#" class="me-3">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
