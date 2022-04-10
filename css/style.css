@@ -65,6 +65,14 @@ body.light-theme {
     background: #000000;
 }
 
+.light-theme .header-title {
+    background: var(--secondary);
+    color: var(--dark-text-color);
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+}
+
 .section-title {
     font-size: 50px;
     line-height: 58px;
