@@ -159,12 +159,24 @@ a {
     margin-bottom: 20px;
 }
 
+.mb-50 {
+    margin-bottom: 50px;
+}
+
 .mb-80 {
     margin-bottom: 80px;
 }
 
+.mt-30 {
+    margin-top: 30px;
+}
+
 .mt-50 {
     margin-top: 50px;
+}
+
+.mt-70 {
+    margin-top: 70px;
 }
 
 .mb-50 {
@@ -174,6 +186,10 @@ a {
 
 .mr-45 {
     margin-right: 45px;
+}
+
+.ml-50 {
+    margin-left: 50px;
 }
 
 /* -----------------
@@ -512,6 +528,15 @@ Explore
         padding-bottom: 50px;
     }
 
+    .mt-30 {
+        margin-top: 15px;
+    }
+
+    .mb-50 {
+        margin-bottom: 30px;
+    }
+
+
     .pt-130 {
         padding-top: 50px;
     }
@@ -564,6 +589,11 @@ Explore
 
     .footer ul {
         text-align: left;
+    }
+
+    /* sign up section */
+    .signup-section {
+        display: none;
     }
 
 }
@@ -709,4 +739,23 @@ Explore
 .from-submit {
     width: auto;
     height: auto;
+}
+
+/* .signup-input input {
+    width: 45%;
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 1px solid #ffffff;
+    border-right: 0;
+    background: #1D232D;
+    text-align: left;
+    border-color: #2C3443;
+} */
+
+.signup-section {
+    display: flex;
+}
+
+.signup-section div {
+    width: 100%;
 }
