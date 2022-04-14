@@ -171,6 +171,10 @@ a {
     margin-top: 30px;
 }
 
+.mt-40 {
+    margin-top: 40px;
+}
+
 .mt-50 {
     margin-top: 50px;
 }
@@ -179,8 +183,16 @@ a {
     margin-top: 70px;
 }
 
+.mb-35 {
+    margin-bottom: 35px;
+}
+
 .mb-50 {
     margin-bottom: 50px;
+}
+
+.mb-70 {
+    margin-bottom: 70px;
 }
 
 
@@ -188,7 +200,7 @@ a {
     margin-right: 45px;
 }
 
-.ml-50 {
+.input-margin {
     margin-left: 50px;
 }
 
@@ -451,6 +463,18 @@ a {
     line-height: 30px;
 }
 
+/* Need help */
+.home-form input {
+    background: none !important;
+}
+
+.home-form textarea {
+    background: none !important;
+    color: var(--secondary);
+}
+
+
+
 /* -------------- 
 Explore  
 ------------------*/
@@ -523,90 +547,12 @@ Explore
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 576px) {
-    .pb-130 {
-        padding-bottom: 50px;
-    }
-
-    .mt-30 {
-        margin-top: 15px;
-    }
-
-    .mb-50 {
-        margin-bottom: 30px;
-    }
-
-
-    .pt-130 {
-        padding-top: 50px;
-    }
-
-    .mb-80 {
-        margin-bottom: 50px;
-    }
-
-    .signin-section {
-        padding: 15px;
-        border-radius: 10px;
-        box-sizing: border-box;
-    }
-
-    .section-title {
-        font-size: 28px;
-        line-height: 32px;
-        letter-spacing: -0.5px;
-        color: var(--light-color);
-        margin-bottom: 12px;
-    }
-
-    .features {
-        font-weight: 900;
-        font-size: 45px;
-        opacity: 0.05;
-        margin-bottom: -50px;
-    }
-
-    .explore-button {
-        display: none;
-    }
-
-    .creative-section {
-        padding: 30px;
-    }
-
-    .creative-details h2 {
-        width: 328px;
-        height: 60px;
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 30px;
-    }
-
-    .creative-details {
-        margin-top: 25px;
-        padding: 0;
-    }
-
-    .footer ul {
-        text-align: left;
-    }
-
-    /* sign up section */
-    .signup-section {
-        display: none;
-    }
-
-}
 
 .social-icon {
     background: #2C3443;
     width: auto;
     margin-right: 10px;
 }
-
-/* .social-icon:hover {
-    background: #0d6efd;
-} */
 
 .signin button:hover {
     background: #0d6efd;
@@ -665,41 +611,6 @@ Explore
 
 }
 
-@media screen and (max-width: 576px) {
-
-    .line-between:before,
-    .line-between:after {
-        background: #2E333D;
-        content: "";
-        display: inline-block;
-        width: auto;
-        height: 1px;
-        position: relative;
-        vertical-align: middle;
-        margin: 0 10px;
-    }
-
-    .divider {
-        width: 40px;
-        height: 2px;
-    }
-
-    .contact-social {
-        text-align: left;
-    }
-
-    .contact-title {
-        margin-top: 25px;
-    }
-
-    .mobile-dark {
-        display: block;
-    }
-
-    .desktop-dark {
-        display: none;
-    }
-}
 
 .me-2 .fa-google {
     color: #EB4335;
@@ -741,16 +652,6 @@ Explore
     height: auto;
 }
 
-/* .signup-input input {
-    width: 45%;
-    border-top: 0;
-    border-left: 0;
-    border-bottom: 1px solid #ffffff;
-    border-right: 0;
-    background: #1D232D;
-    text-align: left;
-    border-color: #2C3443;
-} */
 
 .signup-section {
     display: flex;
@@ -758,4 +659,171 @@ Explore
 
 .signup-section div {
     width: 100%;
+}
+
+.signup-section input {
+    background: #1D232D;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.signup-section textarea {
+    background: #1D232D;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.signup-section input:focus {
+    background: #1D232D;
+    color: #FFFFFF;
+    box-shadow: none;
+}
+
+.signup-section textarea:focus {
+    background: #1D232D;
+    color: #FFFFFF;
+    box-shadow: none;
+}
+
+.form-control {
+    border-radius: 0px;
+}
+
+.retype-password {
+    margin-top: 0px;
+}
+
+
+@media screen and (max-width: 576px) {
+    .pb-130 {
+        padding-bottom: 50px;
+    }
+
+    .mt-30 {
+        margin-top: 15px;
+    }
+
+    .mt-40 {
+        margin-top: 20px;
+    }
+
+    .mt-70 {
+        margin-top: 35px;
+    }
+
+    .mb-50 {
+        margin-bottom: 30px;
+    }
+
+    .mb-70 {
+        margin-bottom: 35px;
+    }
+
+    .mb-35 {
+        margin-bottom: 17.5px;
+    }
+
+    .pt-130 {
+        padding-top: 50px;
+    }
+
+    .mb-80 {
+        margin-bottom: 50px;
+    }
+
+    .signin-section {
+        padding: 15px;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+
+    .section-title {
+        font-size: 28px;
+        line-height: 32px;
+        letter-spacing: -0.5px;
+        color: var(--light-color);
+        margin-bottom: 12px;
+    }
+
+    .features {
+        font-weight: 900;
+        font-size: 45px;
+        opacity: 0.05;
+        margin-bottom: -50px;
+    }
+
+    .explore-button {
+        display: none;
+    }
+
+    .creative-section {
+        padding: 30px;
+    }
+
+    .creative-details h2 {
+        width: 328px;
+        height: 60px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .creative-details {
+        margin-top: 25px;
+        padding: 0;
+    }
+
+    .footer ul {
+        text-align: left;
+    }
+
+    /* sign up section */
+    .signup-section {
+        flex-wrap: wrap;
+    }
+
+    .input-margin {
+        margin-left: 0px;
+    }
+
+    .retype-password {
+        margin-top: 30px;
+    }
+
+    /* --------------- */
+
+    .line-between:before,
+    .line-between:after {
+        background: #2E333D;
+        content: "";
+        display: inline-block;
+        width: auto;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        margin: 0 10px;
+    }
+
+    .divider {
+        width: 40px;
+        height: 2px;
+    }
+
+    .contact-social {
+        text-align: left;
+    }
+
+    .contact-title {
+        margin-top: 25px;
+    }
+
+    .mobile-dark {
+        display: block;
+    }
+
+    .desktop-dark {
+        display: none;
+    }
 }
