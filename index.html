@@ -32,9 +32,9 @@
     <!-- Navbar -->
     <header>
         <section class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark ">
+            <nav class="navbar navbar-expand-lg navbar-dark" id="navbar-icon">
                 <div class="container-fluid">
-                    <img class="img-fluid bg-dark rounded-pill p-2" src="Images/logo/Logo.png" alt="">
+                    <img class="img-fluid navbar-logo" src="Images/logo/Logo.png" alt="">
                     <span class="dark_mode-icon mobile-dark" id="dark-mobile">
                         <i class="fa-solid fa-sun dark-mood" id=""></i>
                     </span>
@@ -869,10 +869,12 @@
                 <div class="col-6 col-md-6 col-lg-2 ">
                     <h4>Newsletter</h4>
                     <p>Subscribe to receive future updates</p>
-                    <form>
-                        <div class="form-group">
-                            <input type="email" class="p-2" placeholder="Email Address">
-                    </form>
+
+                    <div class="input-group mb-3 footer-input">
+                        <input type="text" class="form-control" placeholder="Email address"
+                            aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-play"></i></span>
+                    </div>
                 </div>
             </div>
             <hr>

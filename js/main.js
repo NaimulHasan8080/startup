@@ -14,11 +14,11 @@ for (i = 0; i < dropdown.length; i++) {
         }
     });
 }
-// document.addEventListener("DOMContentLoaded", function () {
 
-// });
+// dark mood and light mood
 let desktoptoggle = document.querySelector("#dark-desktop");
 let mobiletoggle = document.querySelector("#dark-mobile");
+let navbar = document.querySelector("#navbar-icon");
 desktoptoggle.addEventListener("click", modeSwitch);
 mobiletoggle.addEventListener("click", modeSwitch);
 
@@ -31,6 +31,8 @@ function modeSwitch() {
     isLight ? desktoptoggle.firstElementChild.classList = "fa-solid fa-moon" : desktoptoggle.firstElementChild.classList = "fa-solid fa-sun";
 
     isLight ? mobiletoggle.firstElementChild.classList = "fa-solid fa-moon" : mobiletoggle.firstElementChild.classList = "fa-solid fa-sun";
+
+    // isLight ? navbar.classList = "navbar-light" : navbar.classList = "navbar-dark";
 
     root.classList.toggle("light-theme");
 }
